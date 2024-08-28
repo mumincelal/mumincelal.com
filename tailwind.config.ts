@@ -5,13 +5,33 @@ const config: Config = {
   content: ["./app/**/*.{ts,tsx}", "./components/**/*.{ts,tsx}"],
   theme: {
     extend: {
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))"
+      colors: {
+        primary: {
+          DEFAULT: "#2563EB",
+          dark: "#134FD2",
+          light: "#497DEE"
+        },
+        secondary: {
+          DEFAULT: "#111827",
+          dark: "#090D15",
+          light: "#172135"
+        },
+        white: {
+          DEFAULT: "#F7F3F3",
+          dark: "#E3E8ED",
+          light: "#FFFFFF"
+        },
+        black: {
+          DEFAULT: "#060504",
+          dark: "#000000",
+          light: "#120F0C"
+        }
+      },
+      fontSize: {
+        lead: "1.5rem"
       }
     }
   },
-  plugins: [require("tailwindcss-animate")]
+  plugins: [require("tailwindcss-animate"), require("@tailwindcss/typography")]
 };
 export default config;
