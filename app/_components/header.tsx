@@ -95,26 +95,26 @@ export const Header = () => {
           </button>
         </div>
       </div>
-      isMenuOpen && (
-      <div className="absolute top-full left-0 right-0 bg-white dark:bg-secondary-light p-4 md:hidden z-50">
-        <nav className="flex flex-col space-y-4">
-          <Link href="/" onClick={toggleMenu}>
-            Home
-          </Link>
-          <Link href="/about" onClick={toggleMenu}>
-            About
-          </Link>
-          <Link href="/projects" onClick={toggleMenu}>
-            Projects
-          </Link>
-          <Link href="mailto:mumincelalpinar@gmail.com" passHref>
-            <Button>
-              Contact me <ArrowRightIcon className="ml-1 size-3" />
-            </Button>
-          </Link>
-        </nav>
-      </div>
-      )
+      {isMenuOpen && (
+        <div className="absolute top-full left-0 right-0 bg-white dark:bg-secondary-light p-4 md:hidden z-50">
+          <nav className="flex flex-col space-y-4">
+            <Link href="/" onClick={toggleMenu}>
+              Home
+            </Link>
+            <Link href="/about" onClick={toggleMenu}>
+              About
+            </Link>
+            <Link href="/projects" onClick={toggleMenu}>
+              Projects
+            </Link>
+            <Link href="mailto:mumincelalpinar@gmail.com" passHref>
+              <Button>
+                Contact me <ArrowRightIcon className="ml-1 size-3" />
+              </Button>
+            </Link>
+          </nav>
+        </div>
+      )}
     </div>
   );
 };
