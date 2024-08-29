@@ -43,8 +43,7 @@ export const Hero = () => (
       </div>
       <div className="container mx-auto">
         <p className="text-lead text-justify text-gray-dark dark:text-gray-light">
-          I am a Software Engineer, who develops full-stack applications. As a
-          Software Engineer specializing in full-stack development, I am
+          I am a Software Engineer, who develops full-stack applications. I am
           dedicated to helping clients build robust, scalable applications that
           seamlessly integrate user experience with powerful functionality. My
           expertise in both front-end and back-end technologies allows me to

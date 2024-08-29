@@ -34,43 +34,33 @@ export const Header = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
+  const NAVIGATION_MENU_ITEMS = [
+    { href: "/", label: "Home" },
+    { href: "/about", label: "About" },
+    { href: "/projects", label: "Projects" }
+  ];
+
   return (
     <div className="relative">
       <div className="flex items-center justify-between">
-        <div className="text-secondary-dark dark:text-white-dark">
+        <div className="text-secondary-dark dark:text-white-dark font-extrabold">
           mümin celal
         </div>
         <div className="flex items-center space-x-4">
           <div className="hidden md:block">
             <NavigationMenu>
               <NavigationMenuList>
-                <NavigationMenuItem>
-                  <Link href="/" legacyBehavior passHref>
-                    <NavigationMenuLink
-                      className={navigationMenuTriggerStyle()}
-                    >
-                      Home
-                    </NavigationMenuLink>
-                  </Link>
-                </NavigationMenuItem>
-                <NavigationMenuItem>
-                  <Link href="/about" legacyBehavior passHref>
-                    <NavigationMenuLink
-                      className={navigationMenuTriggerStyle()}
-                    >
-                      About
-                    </NavigationMenuLink>
-                  </Link>
-                </NavigationMenuItem>
-                <NavigationMenuItem>
-                  <Link href="/work" legacyBehavior passHref>
-                    <NavigationMenuLink
-                      className={navigationMenuTriggerStyle()}
-                    >
-                      Work
-                    </NavigationMenuLink>
-                  </Link>
-                </NavigationMenuItem>
+                {NAVIGATION_MENU_ITEMS.map(({ href, label }) => (
+                  <NavigationMenuItem key={label}>
+                    <Link href={href} legacyBehavior passHref>
+                      <NavigationMenuLink
+                        className={navigationMenuTriggerStyle()}
+                      >
+                        {label}
+                      </NavigationMenuLink>
+                    </Link>
+                  </NavigationMenuItem>
+                ))}
               </NavigationMenuList>
             </NavigationMenu>
           </div>
@@ -85,9 +75,11 @@ export const Header = () => {
             )}
           </button>
           <div className="hidden md:block">
-            <Button>
-              Contact me <ArrowRightIcon className="ml-1 size-3" />
-            </Button>
+            <Link href="mailto:mumincelalpinar@gmail.com" passHref>
+              <Button>
+                Contact me <ArrowRightIcon className="ml-1 size-3" />
+              </Button>
+            </Link>
           </div>
           <button
             type="button"
@@ -103,24 +95,26 @@ export const Header = () => {
           </button>
         </div>
       </div>
-      {isMenuOpen && (
-        <div className="absolute top-full left-0 right-0 bg-white dark:bg-secondary-light p-4 md:hidden z-50">
-          <nav className="flex flex-col space-y-4">
-            <Link href="/" onClick={toggleMenu}>
-              Home
-            </Link>
-            <Link href="/about" onClick={toggleMenu}>
-              About
-            </Link>
-            <Link href="/work" onClick={toggleMenu}>
-              Work
-            </Link>
-            <Button onClick={toggleMenu}>
+      isMenuOpen && (
+      <div className="absolute top-full left-0 right-0 bg-white dark:bg-secondary-light p-4 md:hidden z-50">
+        <nav className="flex flex-col space-y-4">
+          <Link href="/" onClick={toggleMenu}>
+            Home
+          </Link>
+          <Link href="/about" onClick={toggleMenu}>
+            About
+          </Link>
+          <Link href="/projects" onClick={toggleMenu}>
+            Projects
+          </Link>
+          <Link href="mailto:mumincelalpinar@gmail.com" passHref>
+            <Button>
               Contact me <ArrowRightIcon className="ml-1 size-3" />
             </Button>
-          </nav>
-        </div>
-      )}
+          </Link>
+        </nav>
+      </div>
+      )
     </div>
   );
 };
