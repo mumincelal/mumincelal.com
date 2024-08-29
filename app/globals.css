@@ -3,6 +3,14 @@
 @tailwind utilities;
 
 @layer base {
+  @font-face {
+    font-family: "Source Code Pro";
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url("/fonts/SourceCodePro-Regular.ttf") format("ttf");
+  }
+
   h1 {
     @apply font-bold text-6xl;
   }

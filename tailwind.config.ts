@@ -29,6 +29,10 @@ const config: Config = {
       },
       fontSize: {
         lead: "1.5rem"
+      },
+      fontFamily: {
+        "source-code": ['"Source Code Pro"', "monospace"],
+        "source-sans": ['"Source Sans 3"', "sans-serif"]
       }
     }
   },
