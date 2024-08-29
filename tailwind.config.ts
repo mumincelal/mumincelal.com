@@ -25,14 +25,14 @@ const config: Config = {
           DEFAULT: "#060504",
           dark: "#000000",
           light: "#120F0C"
+        },
+        gray: {
+          light: "#ABADB2",
+          dark: "#898989"
         }
       },
       fontSize: {
         lead: "1.5rem"
-      },
-      fontFamily: {
-        "source-code": ['"Source Code Pro"', "monospace"],
-        "source-sans": ['"Source Sans 3"', "sans-serif"]
       }
     }
   },
