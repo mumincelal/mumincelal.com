@@ -43,7 +43,7 @@ export const Header = () => {
   return (
     <div className="relative">
       <div className="flex items-center justify-between">
-        <div className="text-secondary-dark dark:text-white-dark font-extrabold">
+        <div className="font-extrabold text-secondary-dark dark:text-white-dark">
           mümin celal
         </div>
         <div className="flex items-center space-x-4">
@@ -96,7 +96,7 @@ export const Header = () => {
         </div>
       </div>
       {isMenuOpen && (
-        <div className="absolute top-full left-0 right-0 bg-white dark:bg-secondary-light p-4 md:hidden z-50">
+        <div className="absolute top-full right-0 left-0 z-50 bg-white p-4 md:hidden dark:bg-secondary-light">
           <nav className="flex flex-col space-y-4">
             <Link href="/" onClick={toggleMenu}>
               Home

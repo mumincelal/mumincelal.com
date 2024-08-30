@@ -35,13 +35,13 @@ const BADGES = [
 ];
 
 export const Hero = () => (
-  <div className="container py-24 text-center mx-auto space-y-6 max-w-[935px]">
-    <div className="text-secondary dark:text-white font-bold text-3xl sm:text-6xl">
+  <div className="container mx-auto max-w-[935px] space-y-6 py-24 text-center">
+    <div className="font-bold text-3xl text-secondary sm:text-6xl dark:text-white">
       <p>Hello I'm</p>
       <p>Mümin Celal Pinar</p>
     </div>
     <div className="container mx-auto">
-      <p className="text-lead text-justify text-gray-dark dark:text-gray-light">
+      <p className="text-justify text-gray-dark text-lead dark:text-gray-light">
         I am a Software Engineer, who develops full-stack applications. I am
         dedicated to helping clients build robust, scalable applications that
         seamlessly integrate user experience with powerful functionality. My
@@ -54,7 +54,7 @@ export const Hero = () => (
         achieve your goals with efficiency and precision.
       </p>
     </div>
-    <div className="flex flex-wrap items-center justify-center md:justify-stretch gap-2">
+    <div className="flex flex-wrap items-center justify-center gap-2 md:justify-stretch">
       {BADGES.map(({ icon: Icon, label }) => (
         <Badge key={label}>
           <Icon className="mr-1" /> {label}

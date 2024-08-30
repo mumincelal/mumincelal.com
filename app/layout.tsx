@@ -32,7 +32,7 @@ const RootLayout = ({
         )}
       >
         <Providers>
-          <div className="flex flex-col justify-between h-full px-7 py-4 sm:px-8 sm:pt-2.5 md:px-12 lg:px-28">
+          <div className="flex h-full flex-col justify-between px-7 py-4 sm:px-8 sm:pt-2.5 md:px-12 lg:px-28">
             <Header />
             <div className="flex-1">{children}</div>
             <Footer />

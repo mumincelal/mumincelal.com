@@ -5,7 +5,7 @@ import Link from "next/link";
 
 export const Footer = () => (
   <div className="flex items-center justify-between py-4">
-    <div className="text-secondary-dark dark:text-white-dark font-extrabold">
+    <div className="font-extrabold text-secondary-dark dark:text-white-dark">
       mümin celal
     </div>
     <div className="flex items-center gap-5">
