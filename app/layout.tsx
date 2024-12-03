@@ -1,21 +1,18 @@
-import { Header } from "@/app/_components/header";
-import { Providers } from "@/app/providers";
-import { Analytics } from "@vercel/analytics/react";
-import { SpeedInsights } from "@vercel/speed-insights/next";
+import { cn } from "@/lib/tailwind";
 import type { Metadata } from "next";
-import { Source_Code_Pro } from "next/font/google";
+import { Work_Sans } from "next/font/google";
 import "./globals.css";
 import { Footer } from "@/app/_components/footer";
-import { cn } from "@/utils/tailwind";
+import { Header } from "@/app/_components/header";
 
-const sourceCodePro = Source_Code_Pro({
+const workSans = Work_Sans({
   subsets: ["latin"],
-  variable: "--font-source-code-pro"
+  variable: "--font-work-sans"
 });
 
 export const metadata: Metadata = {
   title: "Mümin Celal Pinar",
-  description: "My personal website and portfolio."
+  description: "Personal Portfolio."
 };
 
 const RootLayout = ({
@@ -25,21 +22,12 @@ const RootLayout = ({
 }>) => {
   return (
     <html lang="en">
-      <body
-        className={cn(
-          "h-screen bg-white dark:bg-secondary",
-          sourceCodePro.className
-        )}
-      >
-        <Providers>
-          <div className="flex h-full flex-col justify-between px-7 py-4 sm:px-8 sm:pt-2.5 md:px-12 lg:px-28">
-            <Header />
-            <div className="flex-1">{children}</div>
-            <Footer />
-          </div>
-        </Providers>
-        <SpeedInsights />
-        <Analytics />
+      <body className={cn("h-screen", workSans.className)}>
+        <div className="flex h-full flex-col justify-between">
+          <Header />
+          <div className="flex-1">{children}</div>
+          <Footer />
+        </div>
       </body>
     </html>
   );

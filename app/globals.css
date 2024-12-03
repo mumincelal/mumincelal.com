@@ -2,6 +2,29 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --color-white: #FFFFFF;
+  --color-gray-50: #F0F1F3;
+  --color-gray-100: #E6E8EB;
+  --color-gray-200: #C3C7CE;
+  --color-gray-300: #A5ACB5;
+  --color-gray-400: #87909D;
+  --color-gray-500: #697484;
+  --color-gray-600: #556070;
+  --color-gray-700: #424E60;
+  --color-gray-800: #2B384C;
+  --color-gray-900: #132238;
+  --color-primary-100: #EDD8FF;
+  --color-primary-200: #DBB1FF;
+  --color-primary-300: #C98BFF;
+  --color-primary-400: #B764FF;
+  --color-primary-500: #A53DFF;
+  --color-primary-600: #8431CC;
+  --color-primary-700: #632599;
+  --color-primary-800: #421866;
+  --color-primary-900: #210C33;
+}
+
 @layer base {
   /* h1 {
     @apply font-bold text-6xl;
@@ -25,21 +48,78 @@
 }
 
 @layer components {
-  .text-lead {
-    @apply font-bold text-2xl;
+  .text-display {
+    @apply font-semibold text-7xl;
   }
 
-  .text-body {
+  .text-body-thin-400 {
+    @apply font-normal text-xs;
+  }
+
+  .text-body-thin-500 {
+    @apply font-medium text-xs;
+  }
+
+  .text-body-thin-600 {
+    @apply font-semibold text-xs;
+  }
+
+  .text-body-small-400 {
+    @apply font-normal text-sm;
+  }
+
+  .text-body-small-500 {
+    @apply font-medium text-sm;
+  }
+
+  .text-body-small-600 {
+    @apply font-semibold text-sm;
+  }
+
+  .text-body-regular-400 {
     @apply font-normal text-base;
   }
 
-  .text-small {
-    @apply font-normal text-xs;
+  .text-body-regular-500 {
+    @apply font-medium text-base;
+  }
+
+  .text-body-regular-600 {
+    @apply font-semibold text-base;
+  }
+
+  .text-body-large-400 {
+    @apply font-normal text-lg;
+  }
+
+  .text-body-large-500 {
+    @apply font-medium text-lg;
+  }
+
+  .text-body-large-600 {
+    @apply font-semibold text-lg;
+  }
+
+  .text-heading-01 {
+    @apply font-semibold text-5xl;
+  }
+
+  .text-heading-02 {
+    @apply font-semibold text-4xl;
+  }
+
+  .text-heading-03 {
+    @apply font-semibold text-3xl;
+  }
+
+  .text-heading-04 {
+    @apply font-semibold text-2xl;
+  }
+
+  .text-heading-05 {
+    @apply font-semibold text-xl;
   }
 }
 
 @layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
 }
