@@ -7,6 +7,7 @@ const config: Config = {
     extend: {
       colors: {
         white: {
+          // biome-ignore lint/style/useNamingConvention: <explanation>
           DEFAULT: "var(--color-white)"
         },
         gray: {
@@ -35,6 +36,8 @@ const config: Config = {
       }
     }
   },
+  // biome-ignore lint/nursery/noCommonJs: <explanation>
   plugins: [require("tailwindcss-animate"), require("@tailwindcss/typography")]
 };
+// biome-ignore lint/style/noDefaultExport: <explanation>
 export default config;

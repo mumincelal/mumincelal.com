@@ -8,6 +8,7 @@ const workSans = Work_Sans({
   variable: "--font-work-sans"
 });
 
+// biome-ignore lint/nursery/useComponentExportOnlyModules: <explanation>
 export const metadata: Metadata = {
   title: "Mümin Celal Pinar",
   description: "Personal Website"
@@ -29,4 +30,5 @@ const RootLayout = ({
   );
 };
 
+// biome-ignore lint/style/noDefaultExport: <explanation>
 export default RootLayout;
