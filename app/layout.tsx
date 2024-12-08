@@ -8,7 +8,7 @@ const workSans = Work_Sans({
   variable: "--font-work-sans"
 });
 
-// biome-ignore lint/nursery/useComponentExportOnlyModules: <explanation>
+// biome-ignore lint/nursery/useComponentExportOnlyModules: It is a Next.js metadata convention
 export const metadata: Metadata = {
   title: "Mümin Celal Pinar",
   description: "Personal Website"
@@ -30,5 +30,5 @@ const RootLayout = ({
   );
 };
 
-// biome-ignore lint/style/noDefaultExport: <explanation>
+// biome-ignore lint/style/noDefaultExport: It is a Next.js convention
 export default RootLayout;

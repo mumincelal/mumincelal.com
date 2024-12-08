@@ -5,5 +5,5 @@ const config = {
   }
 };
 
-// biome-ignore lint/style/noDefaultExport: <explanation>
+// biome-ignore lint/style/noDefaultExport: It is a postcss configuration file
 export default config;

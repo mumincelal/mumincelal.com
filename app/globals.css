@@ -26,103 +26,19 @@
 }
 
 @layer base {
-  /* h1 {
-    @apply font-bold text-6xl;
-  }
-
-  h2 {
-    @apply font-bold text-5xl;
-  }
-
-  h3 {
-    @apply font-bold text-4xl;
-  }
-
-  h4 {
-    @apply  font-bold text-3xl;
-  }
-
-  h5 {
-    @apply font-bold text-2xl;
-  } */
+  /*
+    Tailwind base styles
+  */
 }
 
 @layer components {
-  .text-display {
-    @apply font-semibold text-7xl;
-  }
-
-  .text-body-thin-400 {
-    @apply font-normal text-xs;
-  }
-
-  .text-body-thin-500 {
-    @apply font-medium text-xs;
-  }
-
-  .text-body-thin-600 {
-    @apply font-semibold text-xs;
-  }
-
-  .text-body-small-400 {
-    @apply font-normal text-sm;
-  }
-
-  .text-body-small-500 {
-    @apply font-medium text-sm;
-  }
-
-  .text-body-small-600 {
-    @apply font-semibold text-sm;
-  }
-
-  .text-body-regular-400 {
-    @apply font-normal text-base;
-  }
-
-  .text-body-regular-500 {
-    @apply font-medium text-base;
-  }
-
-  .text-body-regular-600 {
-    @apply font-semibold text-base;
-  }
-
-  .text-body-large-400 {
-    @apply font-normal text-lg;
-  }
-
-  .text-body-large-500 {
-    @apply font-medium text-lg;
-  }
-
-  .text-body-large-600 {
-    @apply font-semibold text-lg;
-  }
-
-  .text-heading-01 {
-    @apply font-semibold text-5xl;
-  }
-
-  .text-heading-02 {
-    @apply font-semibold text-4xl;
-  }
-
-  .text-heading-03 {
-    @apply font-semibold text-3xl;
-  }
-
-  .text-heading-04 {
-    @apply font-semibold text-2xl;
-  }
-
-  .text-heading-05 {
-    @apply font-semibold text-xl;
-  }
+  /*
+    Tailwind components
+  */
 }
 
 @layer utilities {
-  /* .text-balance {
-    text-wrap: balance;
-  } */
+  /*
+    Tailwind utilities
+  */
 }
