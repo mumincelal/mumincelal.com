@@ -2,26 +2,30 @@ import { Container } from "@/components/container";
 import { CtaButton } from "@/components/cta-button";
 
 export const Hero = () => (
-  <div className="pt-32 pb-56">
+  <div className="h-[100rem] bg-[radial-gradient(farthest-corner_at_top_right,rgba(218,77,241,0.4),transparent_30%),radial-gradient(circle_at_right,rgba(196,245,233,0.7),transparent_30%),radial-gradient(farthest-corner_at_bottom_left,rgba(255,234,198,0.7),transparent_30%)] bg-transparent pt-32 pb-56">
     <Container>
       <div className="flex items-center justify-center">
         <div className="flex size-full items-stretch justify-between">
-          <div className="flex max-w-3xl flex-col justify-between">
+          <div className="flex max-w-[41.5rem] flex-col justify-between">
             <div className="flex flex-col space-y-6 pt-10">
               <div className="space-y-0">
                 <h1 className="text-balance text-display text-gray-900">
                   Hello, I'm
                 </h1>
                 <h1 className="text-balance text-display text-gray-900">
-                  Mümin Celal Pinar
+                  Brooklyn Gilbert
                 </h1>
               </div>
               <p className="text-body-large-400 text-gray-600">
-                I'm a&nbsp;
+                I'm a Freelance&nbsp;
                 <span className="rounded bg-red-100 p-1 text-gray-900">
-                  Full-Stack Developer
+                  UI/UX Designer
                 </span>
-                &nbsp;based in Izmir, Turkiye. I strives to build immersive and
+                &nbsp;and&nbsp;
+                <span className="rounded bg-red-100 p-1 text-gray-900">
+                  Developer
+                </span>
+                &nbsp;based in London, England. I strives to build immersive and
                 beautiful web applications through carefully crafted code and
                 user-centric design.
               </p>
@@ -29,7 +33,7 @@ export const Hero = () => (
                 Say Hello!
               </CtaButton>
             </div>
-            <div className="flex items-center space-x-1">
+            <div className="grid grid-cols-3 gap-1">
               <div className="flex items-center justify-center rounded-l-md bg-[#EDD8FF]/50 px-3 py-5">
                 <div className="flex flex-col items-center">
                   <h1 className="text-gray-700 text-heading-3">8 Y.</h1>
@@ -56,7 +60,7 @@ export const Hero = () => (
               </div>
             </div>
           </div>
-          <div className="aspect-[3/4] h-[40rem] w-[30rem] rounded-3xl border border-gray-100" />
+          <div className="aspect-[3/4] h-[40rem] w-[30rem] rounded-3xl border border-gray-100 bg-white" />
         </div>
       </div>
     </Container>
