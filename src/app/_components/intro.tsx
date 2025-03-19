@@ -1,6 +1,7 @@
 import { IconArrowNarrowRight } from "@tabler/icons-react";
 import Link from "next/link";
 import { Text } from "~/components/text";
+import { PageUrl } from "~/constants";
 
 export const Intro = () => (
   <div className="grid grid-cols-1 gap-6">
@@ -24,7 +25,7 @@ export const Intro = () => (
       design, and content creation. I am passionate about learning new
       technologies and continuously improving my skills.
     </Text>
-    <Link href="#" passHref>
+    <Link href={PageUrl.Contact} passHref>
       <div className="flex items-center gap-2">
         <Text variant="light" size={24}>
           Say hi

@@ -11,7 +11,7 @@ export const PageUrl = {
   Home: "/",
   Projects: "/projects",
   Resume: "/resume",
-  Contact: "/contact"
+  Contact: "#contact"
 } as const;
 
 export const projects: Project[] = [

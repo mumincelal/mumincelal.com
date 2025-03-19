@@ -3,7 +3,7 @@ import { Text } from "~/components/text";
 import { socials } from "~/constants";
 
 export const Contact = () => (
-  <div className="flex gap-25">
+  <div id="contact" className="flex gap-25">
     <Text variant="light" size={18} className="uppercase">
       Contact
     </Text>
