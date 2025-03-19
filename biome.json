@@ -6,6 +6,9 @@
     "useIgnoreFile": true,
     "defaultBranch": "main"
   },
+  "files": {
+    "ignore": ["*.css"]
+  },
   "formatter": {
     "enabled": true,
     "indentStyle": "space",
@@ -15,14 +18,7 @@
     "attributePosition": "auto",
     "formatWithErrors": false,
     "useEditorconfig": true,
-    "ignore": [
-      "node_modules",
-      ".next",
-      "dist",
-      "build",
-      "public",
-      ".dockerignore"
-    ]
+    "ignore": ["node_modules", ".next", "dist", "build", ".dockerignore"]
   },
   "linter": {
     "enabled": true,
@@ -214,7 +210,13 @@
       }
     },
     {
-      "include": ["app/**/page.tsx", "app/**/layout.tsx", "next.config.ts"],
+      "include": [
+        "app/**/page.tsx",
+        "app/**/not-found.tsx",
+        "app/**/layout.tsx",
+        "next.config.ts",
+        "postcss.config.js"
+      ],
       "linter": {
         "rules": {
           "style": {

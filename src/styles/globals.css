@@ -1,44 +1,56 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+@plugin 'tailwindcss-animate';
 
-:root {
-  --color-white: #ffffff;
-  --color-gray-50: #f0f1f3;
-  --color-gray-100: #e6e8eb;
-  --color-gray-200: #c3c7ce;
-  --color-gray-300: #a5acb5;
-  --color-gray-400: #87909d;
-  --color-gray-500: #697484;
-  --color-gray-600: #556070;
-  --color-gray-700: #424e60;
-  --color-gray-800: #2b384c;
-  --color-gray-900: #132238;
-  --color-primary-100: #edd8ff;
-  --color-primary-200: #dbb1ff;
-  --color-primary-300: #c98bff;
-  --color-primary-400: #b764ff;
-  --color-primary-500: #a53dff;
-  --color-primary-600: #8431cc;
-  --color-primary-700: #632599;
-  --color-primary-800: #421866;
-  --color-primary-900: #210c33;
+@custom-variant dark (&:is(.dark *));
+
+@theme {
+  --color-*: initial;
+
+  --color-background: hsl(var(--background));
+  --color-foreground: hsl(var(--foreground));
+  --color-link: hsl(var(--link));
+  --color-border: hsl(var(--border));
+  --color-gradient-1: hsl(var(--gradient-1));
+  --color-gradient-2: hsl(var(--gradient-2));
+  --color-gradient-3: hsl(var(--gradient-3));
+}
+
+/*
+  The default border color has changed to `currentColor` in Tailwind CSS v4,
+  so we've added these compatibility styles to make sure everything still
+  looks the same as it did with Tailwind CSS v3.
+
+  If we ever want to remove these styles, we need to add an explicit border
+  color utility to any element that depends on these defaults.
+*/
+@layer base {
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: var(--color-gray-200, currentColor);
+  }
 }
 
 @layer base {
-  /*
-    Tailwind base styles
-  */
-}
+  :root {
+    --background: 0, 0%, 100%;
+    --foreground: 0, 0%, 10.2%;
+    --link: 208.16, 100%, 28.82%;
+    --border: 0, 0%, 77.65%;
+    --gradient-1: 270.55, 77.99%, 59.02%;
+    --gradient-2: 193.24, 100%, 60%;
+    --gradient-3: 337.61, 66.34%, 60.39%;
+  }
 
-@layer components {
-  /*
-    Tailwind components
-  */
-}
-
-@layer utilities {
-  /*
-    Tailwind utilities
-  */
+  .dark {
+    --background: 0, 0%, 6.67%;
+    --foreground: 0, 0%, 94.12%;
+    --link: 208, 68.97%, 65.88%;
+    --border: 0, 0%, 77.65%;
+    --gradient-1: 270.55, 77.99%, 59.02%;
+    --gradient-2: 193.24, 100%, 60%;
+    --gradient-3: 337.61, 66.34%, 60.39%;
+  }
 }

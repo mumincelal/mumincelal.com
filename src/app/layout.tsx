@@ -1,9 +1,10 @@
-import { cn } from "@/src/lib/tailwind";
 import type { Metadata } from "next";
-import { Work_Sans } from "next/font/google";
+import { Inter } from "next/font/google";
+import { Providers } from "~/app/providers";
+import { cn } from "~/lib/tailwind";
 import "~/styles/globals.css";
 
-const workSans = Work_Sans({
+const inter = Inter({
   subsets: ["latin"],
   variable: "--font-work-sans"
 });
@@ -13,7 +14,7 @@ export const metadata: Metadata = {
     template: "%s | Mümin Celal",
     default: "Mümin Celal Pinar"
   },
-  description: "Mümin Celal Pinar's personal website"
+  description: "Mümin Celal Pinar"
 };
 
 const RootLayout = ({
@@ -21,11 +22,9 @@ const RootLayout = ({
 }: Readonly<{
   children: React.ReactNode;
 }>) => (
-  <html lang="en">
-    <body className={cn("h-screen", workSans.className)}>
-      <div className="flex h-full flex-col justify-between">
-        <div className="flex-1">{children}</div>
-      </div>
+  <html lang="en" suppressHydrationWarning>
+    <body className={cn("min-h-screen", inter.className)}>
+      <Providers>{children}</Providers>
     </body>
   </html>
 );
