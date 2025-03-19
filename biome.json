@@ -15,7 +15,14 @@
     "attributePosition": "auto",
     "formatWithErrors": false,
     "useEditorconfig": true,
-    "ignore": ["node_modules", ".next", "dist", "build", "public"]
+    "ignore": [
+      "node_modules",
+      ".next",
+      "dist",
+      "build",
+      "public",
+      ".dockerignore"
+    ]
   },
   "linter": {
     "enabled": true,
@@ -24,7 +31,9 @@
         "recommended": true
       },
       "complexity": {
-        "all": true
+        "all": true,
+        "useArrowFunction": "error",
+        "noUselessFragments": "error"
       },
       "correctness": {
         "recommended": true,
@@ -33,7 +42,8 @@
         "noUnusedPrivateClassMembers": "error",
         "noUnusedVariables": "error",
         "useArrayLiterals": "error",
-        "useHookAtTopLevel": "error"
+        "useHookAtTopLevel": "error",
+        "useExhaustiveDependencies": "warn"
       },
       "nursery": {
         "noCommonJs": "error",
@@ -69,7 +79,12 @@
         "useAriaPropsSupportedByRole": "error",
         "useAtIndex": "error",
         "useCollapsedIf": "error",
-        "useComponentExportOnlyModules": "error",
+        "useComponentExportOnlyModules": {
+          "level": "error",
+          "options": {
+            "allowExportNames": ["metadata"]
+          }
+        },
         "useConsistentCurlyBraces": "error",
         "useDeprecatedReason": "error",
         "useGoogleFontDisplay": "error",
@@ -123,6 +138,7 @@
         "useShorthandAssign": "error",
         "useThrowNewError": "error",
         "useThrowOnlyError": "error",
+        "useImportType": "off",
         "useNamingConvention": {
           "level": "error",
           "options": {
@@ -186,6 +202,26 @@
   "overrides": [
     {
       "include": ["*.js?(x)", "*.ts?(x)"]
+    },
+    {
+      "include": ["commitlint.config.js"],
+      "linter": {
+        "rules": {
+          "nursery": {
+            "noCommonJs": "off"
+          }
+        }
+      }
+    },
+    {
+      "include": ["app/**/page.tsx", "app/**/layout.tsx", "next.config.ts"],
+      "linter": {
+        "rules": {
+          "style": {
+            "noDefaultExport": "off"
+          }
+        }
+      }
     }
   ]
 }
