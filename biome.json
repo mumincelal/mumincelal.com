@@ -215,7 +215,7 @@
         "app/**/not-found.tsx",
         "app/**/layout.tsx",
         "next.config.ts",
-        "postcss.config.js"
+        "postcss.config.mjs"
       ],
       "linter": {
         "rules": {
