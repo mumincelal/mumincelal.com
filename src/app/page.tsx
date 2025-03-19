@@ -1,11 +1,18 @@
-import { Header } from "~/components/header";
+import { Contact } from "~/app/_components/contact";
+import { FeaturedExperiences } from "~/app/_components/featured-experiences";
+import { FeaturedProjects } from "~/app/_components/featured-projects";
+import { Intro } from "~/app/_components/intro";
+import { Divider } from "~/components/divider";
 
-const Home = () => (
-  <div className="container mx-auto h-screen pt-10 pb-30">
-    <div className="grid grid-cols-1">
-      <Header />
-    </div>
-  </div>
+const HomePage = () => (
+  <>
+    <Intro />
+    <FeaturedProjects />
+    <Divider />
+    <FeaturedExperiences />
+    <Divider />
+    <Contact />
+  </>
 );
 
-export default Home;
+export default HomePage;

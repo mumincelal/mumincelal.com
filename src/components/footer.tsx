@@ -3,7 +3,7 @@ import { Text } from "~/components/text";
 import { ThemeToggle } from "~/components/theme-toggle";
 import { PageUrl } from "~/constants";
 
-export const Header = () => {
+export const Footer = () => {
   return (
     <div className="flex items-center justify-between">
       <Link href={PageUrl.Home}>

@@ -5,13 +5,15 @@ const textVariants = cva("text-foreground", {
   variants: {
     variant: {
       extralight: "font-extralight",
-      light: "font-light"
+      light: "font-light",
+      medium: "font-medium"
     },
     size: {
       14: "text-sm",
       16: "text-base",
       18: "text-lg",
-      24: "text-2xl"
+      24: "text-2xl",
+      96: "text-8xl"
     }
   }
 });

@@ -1,0 +1,19 @@
+import { SocialButton } from "~/app/_components/social-button";
+import { Text } from "~/components/text";
+import { socials } from "~/constants";
+
+export const Contact = () => (
+  <div className="flex gap-25">
+    <Text variant="light" size={18} className="uppercase">
+      Contact
+    </Text>
+    <div className="flex flex-wrap items-center gap-3">
+      {socials.map((social) => (
+        <SocialButton key={social.name} href={social.href}>
+          {<social.icon />}
+          {social.name}
+        </SocialButton>
+      ))}
+    </div>
+  </div>
+);

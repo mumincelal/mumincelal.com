@@ -224,6 +224,30 @@
           }
         }
       }
+    },
+    {
+      "include": ["constants.ts"],
+      "linter": {
+        "rules": {
+          "style": {
+            "useNamingConvention": {
+              "level": "error",
+              "options": {
+                "strictCase": true,
+                "requireAscii": true,
+                "conventions": [
+                  {
+                    "selector": {
+                      "kind": "objectLiteralProperty"
+                    },
+                    "formats": ["camelCase", "PascalCase", "CONSTANT_CASE"]
+                  }
+                ]
+              }
+            }
+          }
+        }
+      }
     }
   ]
 }
