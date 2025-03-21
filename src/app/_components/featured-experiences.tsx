@@ -3,7 +3,7 @@ import { Text } from "~/components/text";
 import { experiences } from "~/constants";
 
 export const FeaturedExperiences = () => (
-  <div className="flex gap-25">
+  <div className="flex flex-col gap-5 lg:flex-row lg:gap-25">
     <Text variant="light" size={18} className="uppercase">
       Experiences
     </Text>

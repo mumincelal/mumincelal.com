@@ -10,7 +10,7 @@ export const Intro = () => (
     <Text
       variant="medium"
       size={96}
-      className="bg-gradient-to-r from-gradient-1 via-gradient-2 to-gradient-3 bg-clip-text text-transparent"
+      className="text-balance bg-gradient-to-r from-gradient-1 via-gradient-2 to-gradient-3 bg-clip-text text-transparent"
     >
       Mümin Celal Pinar
     </Text>
