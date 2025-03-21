@@ -1,12 +1,10 @@
-import { TablerIcon } from "@tabler/icons-react";
-
 export type Project = Readonly<{
   title: string;
   image: string;
-  icon?: TablerIcon;
+  icon?: React.ElementType;
   description: string;
-  website: string;
-  github: string;
+  website?: string;
+  github?: string;
   techStack: string[];
 }>;
 
@@ -16,11 +14,11 @@ export type Experience = Readonly<{
   location: string;
   startDate: string;
   endDate: string;
-  description: string;
+  descriptions: string[];
 }>;
 
 export type Social = Readonly<{
   name: string;
-  icon: TablerIcon;
+  icon: React.ElementType;
   href: string;
 }>;

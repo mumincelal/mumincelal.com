@@ -1,10 +1,7 @@
-import {
-  IconBrandGithub,
-  IconBrandLinkedin,
-  IconBrandUpwork,
-  IconBrandXFilled,
-  IconMailFilled
-} from "@tabler/icons-react";
+import { EmailIcon } from "~/icons/email";
+import { GitHubIcon } from "~/icons/github";
+import { LinkedinIcon } from "~/icons/linkedin";
+import { UpworkIcon } from "~/icons/upwork";
 import { Experience, Project, Social } from "~/types";
 
 export const PageUrl = {
@@ -87,28 +84,23 @@ export const experiences: Experience[] = [
 export const socials: Social[] = [
   {
     name: "Email",
-    icon: IconMailFilled,
+    icon: EmailIcon,
     href: "mailto:mumincelalpinar@gmail.com"
   },
   {
     name: "GitHub",
-    icon: IconBrandGithub,
+    icon: GitHubIcon,
     href: "https://github.com/mumincelal"
   },
   {
     name: "Upwork",
-    icon: IconBrandUpwork,
+    icon: UpworkIcon,
     // biome-ignore lint/nursery/noSecrets: <explanation>
     href: "https://www.upwork.com/freelancers/~01f0f28edf2a156eab"
   },
   {
     name: "LinkedIn",
-    icon: IconBrandLinkedin,
+    icon: LinkedinIcon,
     href: "https://www.linkedin.com/in/mumin-celal-pinar"
-  },
-  {
-    name: "Twitter",
-    icon: IconBrandXFilled,
-    href: "https://x.com/mumin_celal"
   }
 ];

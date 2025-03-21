@@ -1,6 +1,10 @@
+import { Text } from "~/components/text";
+
 const NotFound = () => (
-  <div className="justify-centermin-h-screen flex items-center">
-    We couldn't find the page you were looking for!
+  <div className="flex items-center justify-center">
+    <Text variant="light" size={24}>
+      We couldn't find the page you were looking for!
+    </Text>
   </div>
 );
 

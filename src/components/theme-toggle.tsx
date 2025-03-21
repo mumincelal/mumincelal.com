@@ -1,14 +1,12 @@
 "use client";
 
-import {
-  IconContrastFilled,
-  IconMoonFilled,
-  IconSunFilled
-} from "@tabler/icons-react";
 import { motion, useAnimation } from "motion/react";
 import { useTheme } from "next-themes";
 import React from "react";
 import { useNextValue } from "~/hooks/use-next-value";
+import { ContrastIcon } from "~/icons/contrast";
+import { MoonIcon } from "~/icons/moon";
+import { SunIcon } from "~/icons/sun";
 import { cn } from "~/lib/tailwind";
 
 export const ThemeToggle = () => {
@@ -96,7 +94,7 @@ export const ThemeToggle = () => {
             animate={controlsSun}
             transition={{ duration: 0.2, ease: "easeInOut" }}
           >
-            <IconSunFilled className="size-5" />
+            <SunIcon className="size-5" />
           </motion.div>
           <motion.div
             className="absolute top-0 left-0 size-5"
@@ -105,7 +103,7 @@ export const ThemeToggle = () => {
             animate={controlsContrast}
             transition={{ duration: 0.2, ease: "easeInOut" }}
           >
-            <IconContrastFilled className="size-5 dark:rotate-180" />
+            <ContrastIcon className="size-5 dark:rotate-180" />
           </motion.div>
           <motion.div
             className="absolute top-0 left-0 size-5"
@@ -114,7 +112,7 @@ export const ThemeToggle = () => {
             animate={controlsMoon}
             transition={{ duration: 0.2, ease: "easeInOut" }}
           >
-            <IconMoonFilled className="size-5" />
+            <MoonIcon className="size-5" />
           </motion.div>
         </motion.div>
       </motion.div>

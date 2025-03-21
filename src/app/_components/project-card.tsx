@@ -1,8 +1,9 @@
-import { IconBrandGithub, IconLink } from "@tabler/icons-react";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import { Text } from "~/components/text";
+import { GitHubIcon } from "~/icons/github";
+import { LinkIcon } from "~/icons/link";
 import { Project } from "~/types";
 
 type ProjectCardProps = Readonly<{
@@ -24,12 +25,14 @@ export const ProjectCard = ({ project }: ProjectCardProps) => (
         {project.title}
       </Text>
       <div className="flex items-center gap-2">
-        <Link href={project.github} target="_blank">
-          <IconBrandGithub />
-        </Link>
+        {project.github && (
+          <Link href={project.github} target="_blank">
+            <GitHubIcon />
+          </Link>
+        )}
         {project.website && (
           <Link href={project.website} target="_blank">
-            <IconLink />
+            <LinkIcon />
           </Link>
         )}
       </div>

@@ -8,12 +8,16 @@ export const Contact = () => (
       Contact
     </Text>
     <div className="flex flex-wrap items-center gap-3">
-      {socials.map((social) => (
-        <SocialButton key={social.name} href={social.href}>
-          {<social.icon />}
-          {social.name}
-        </SocialButton>
-      ))}
+      {socials.map((social) => {
+        const SocialIcon = social.icon;
+
+        return (
+          <SocialButton key={social.name} href={social.href}>
+            {<SocialIcon />}
+            {social.name}
+          </SocialButton>
+        );
+      })}
     </div>
   </div>
 );

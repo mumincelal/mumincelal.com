@@ -5,14 +5,14 @@ import { Intro } from "~/app/_components/intro";
 import { Divider } from "~/components/divider";
 
 const HomePage = () => (
-  <>
+  <div className="grid grid-cols-1 gap-30">
     <Intro />
     <FeaturedProjects />
     <Divider />
     <FeaturedExperiences />
     <Divider />
     <Contact />
-  </>
+  </div>
 );
 
 export default HomePage;

@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import { Providers } from "~/app/providers";
-import { Footer } from "~/components/footer";
 import { Header } from "~/components/header";
 import { cn } from "~/lib/tailwind";
 import "~/styles/globals.css";
@@ -13,7 +12,7 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: {
-    template: "%s | Mümin Celal",
+    template: "%s",
     default: "Mümin Celal Pinar"
   },
   description: "Mümin Celal Pinar"
@@ -27,12 +26,9 @@ const RootLayout = ({
   <html lang="en" suppressHydrationWarning>
     <body className={cn("min-h-screen", inter.className)}>
       <Providers>
-        <div className="container mx-auto min-h-screen max-w-5xl pt-10 pb-30">
-          <div className="grid grid-cols-1 gap-30">
-            <Header />
-            {children}
-            <Footer />
-          </div>
+        <div className="container mx-auto flex min-h-screen max-w-5xl flex-col gap-30 pt-10 pb-20">
+          <Header />
+          <main className="flex-1">{children}</main>
         </div>
       </Providers>
     </body>
