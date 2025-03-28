@@ -19,7 +19,11 @@ export const Header = () => {
   return (
     <div className="flex items-center justify-between">
       <Link href={PageUrl.Home}>
-        <Text variant="extralight" size={24}>
+        <Text
+          variant="extralight"
+          size={24}
+          className="hover:text-foreground/60"
+        >
           MC.
         </Text>
       </Link>
@@ -34,17 +38,12 @@ export const Header = () => {
 const DesktopHeader = () => (
   <>
     <Link href={PageUrl.Projects}>
-      <Text variant="extralight" size={18}>
+      <Text variant="extralight" size={18} className="hover:text-foreground/60">
         Projects
       </Text>
     </Link>
-    <Link href={PageUrl.Resume}>
-      <Text variant="extralight" size={18}>
-        Resume
-      </Text>
-    </Link>
     <Link href={PageUrl.Contact}>
-      <Text variant="extralight" size={18}>
+      <Text variant="extralight" size={18} className="hover:text-foreground/60">
         Contact
       </Text>
     </Link>
@@ -63,13 +62,6 @@ const MobileHeader = () => (
         <Link href={PageUrl.Projects}>
           <Text variant="extralight" size={16}>
             Projects
-          </Text>
-        </Link>
-      </DropdownMenuItem>
-      <DropdownMenuItem>
-        <Link href={PageUrl.Resume}>
-          <Text variant="extralight" size={16}>
-            Resume
           </Text>
         </Link>
       </DropdownMenuItem>

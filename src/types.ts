@@ -18,6 +18,7 @@ export type Experience = Readonly<{
 }>;
 
 export type Social = Readonly<{
+  id: string;
   name: string;
   icon: React.ElementType;
   href: string;

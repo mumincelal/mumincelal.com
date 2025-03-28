@@ -15,13 +15,13 @@ export const Intro = () => (
       Mümin Celal Pinar
     </Text>
     <Text variant="extralight" size={18} className="text-justify">
-      I'm <strong>a Software Engineer</strong> passionate about building
-      high-quality digital solutions. With experience across various industries,
-      I focus on creating efficient and reliable applications that enhance user
-      experiences. This space showcases my work, projects, and interests in
-      technology. Feel free to explore and connect!
+      I'm a <strong>a Software Engineer</strong> who loves creating digital
+      solutions that work well and make life easier. With experience in
+      different industries, I'm all about building reliable and efficient apps
+      that improve user experiences. This space is where I share my projects,
+      work, and tech interests. Take a look and feel free to reach out!
     </Text>
-    <Link href="mailto:mumincelalpinar@gmail.com" passHref>
+    <Link href="mailto:hello@mumincelal.com" passHref>
       <div className="flex items-center gap-2">
         <Text variant="light" size={24}>
           Say hi

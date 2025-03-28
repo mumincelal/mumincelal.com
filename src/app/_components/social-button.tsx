@@ -11,7 +11,7 @@ export const SocialButton = ({
   <Link href={href} target="_blank" passHref>
     <button
       type="button"
-      className="inline-flex min-w-50 cursor-pointer items-center justify-center gap-2.5 rounded-sm border border-border py-3"
+      className="inline-flex cursor-pointer items-center justify-center gap-2 rounded-sm py-3 text-foreground/50 hover:text-foreground/100"
     >
       {children}
     </button>

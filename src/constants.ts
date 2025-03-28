@@ -1,49 +1,49 @@
-import { EmailIcon } from "~/icons/email";
+import { BlueskyIcon } from "~/icons/bluesky";
 import { GitHubIcon } from "~/icons/github";
 import { LinkedinIcon } from "~/icons/linkedin";
 import { UpworkIcon } from "~/icons/upwork";
+import { XIcon } from "~/icons/x";
 import { Experience, Project, Social } from "~/types";
 
 export const PageUrl = {
   Home: "/",
   Projects: "/projects",
-  Resume: "/resume",
-  Contact: "#contact"
+  Contact: "/contact"
 } as const;
 
 export const projects: Project[] = [
-  // {
-  //   title: "Project 1",
-  //   image: "/images/project-1.png",
-  //   description: "Description 1",
-  //   website: "https://example.com/project1",
-  //   github: "https://github.com/example/project1",
-  //   techStack: ["JavaScript", "React"]
-  // },
-  // {
-  //   title: "Project 2",
-  //   image: "/images/project-2.png",
-  //   description: "Description 2",
-  //   website: "https://example.com/project2",
-  //   github: "https://github.com/example/project2",
-  //   techStack: ["TypeScript", "Node.js"]
-  // },
-  // {
-  //   title: "Project 3",
-  //   image: "/images/project-1.png",
-  //   description: "Description 3",
-  //   website: "https://example.com/project3",
-  //   github: "https://github.com/example/project3",
-  //   techStack: ["Python", "Django"]
-  // },
-  // {
-  //   title: "Project 4",
-  //   image: "/images/project-2.png",
-  //   description: "Description 4",
-  //   website: "https://example.com/project4",
-  //   github: "https://github.com/example/project4",
-  //   techStack: ["Go", "Gin"]
-  // }
+  {
+    title: "Project 1",
+    image: "/images/project-1.png",
+    description: "Description 1",
+    website: "https://example.com/project1",
+    github: "https://github.com/example/project1",
+    techStack: ["JavaScript", "React"]
+  },
+  {
+    title: "Project 2",
+    image: "/images/project-2.png",
+    description: "Description 2",
+    website: "https://example.com/project2",
+    github: "https://github.com/example/project2",
+    techStack: ["TypeScript", "Node.js"]
+  },
+  {
+    title: "Project 3",
+    image: "/images/project-1.png",
+    description: "Description 3",
+    website: "https://example.com/project3",
+    github: "https://github.com/example/project3",
+    techStack: ["Python", "Django"]
+  },
+  {
+    title: "Project 4",
+    image: "/images/project-2.png",
+    description: "Description 4",
+    website: "https://example.com/project4",
+    github: "https://github.com/example/project4",
+    techStack: ["Go", "Gin"]
+  }
 ];
 
 export const experiences: Experience[] = [
@@ -83,24 +83,34 @@ export const experiences: Experience[] = [
 
 export const socials: Social[] = [
   {
-    name: "Email",
-    icon: EmailIcon,
-    href: "mailto:mumincelalpinar@gmail.com"
-  },
-  {
-    name: "GitHub",
+    id: "github",
+    name: "@mumincelal",
     icon: GitHubIcon,
     href: "https://github.com/mumincelal"
   },
   {
-    name: "Upwork",
+    id: "upwork",
+    name: "@mumincelal",
     icon: UpworkIcon,
     // biome-ignore lint/nursery/noSecrets: <explanation>
     href: "https://www.upwork.com/freelancers/~01f0f28edf2a156eab"
   },
   {
-    name: "LinkedIn",
+    id: "linkedin",
+    name: "@mumin-celal-pinar",
     icon: LinkedinIcon,
     href: "https://www.linkedin.com/in/mumin-celal-pinar"
+  },
+  {
+    id: "x",
+    name: "@mumin_celal",
+    icon: XIcon,
+    href: "https://x.com/mumin_celal"
+  },
+  {
+    id: "bluesky",
+    name: "@mumincelal.bsky.social",
+    icon: BlueskyIcon,
+    href: "https://bsky.app/profile/mumincelal.bsky.social"
   }
 ];

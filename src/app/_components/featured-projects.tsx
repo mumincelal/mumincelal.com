@@ -8,7 +8,7 @@ export const FeaturedProjects = () => (
       Featured Projects
     </Text>
     <div className="grid grid-cols-1 gap-15 md:grid-cols-2">
-      {projects.slice(0, 3).map((project) => (
+      {projects.slice(0, 4).map((project) => (
         <ProjectCard key={project.title} project={project} />
       ))}
     </div>

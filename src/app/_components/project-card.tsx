@@ -20,39 +20,39 @@ export const ProjectCard = ({ project }: ProjectCardProps) => (
       height="338"
       priority
     />
+    <Text variant="light" className="text-foreground" size={16}>
+      {project.title}
+    </Text>
+    <Text variant="light" className="text-foreground/50" size={14}>
+      {project.description}
+    </Text>
     <div className="flex items-center justify-between">
-      <Text variant="light" size={24}>
-        {project.title}
-      </Text>
+      <div className="flex items-center gap-2">
+        {project.techStack.map((tech, index) => (
+          <React.Fragment key={tech}>
+            <Text variant="light" size={14} className="text-link">
+              {tech}
+            </Text>
+            {index !== project.techStack.length - 1 ? (
+              <Text variant="light" size={14}>
+                -
+              </Text>
+            ) : null}
+          </React.Fragment>
+        ))}
+      </div>
       <div className="flex items-center gap-2">
         {project.github && (
           <Link href={project.github} target="_blank">
-            <GitHubIcon />
+            <GitHubIcon className="size-4 text-foreground/50 hover:text-foreground/100" />
           </Link>
         )}
         {project.website && (
           <Link href={project.website} target="_blank">
-            <LinkIcon />
+            <LinkIcon className="size-4 text-foreground/50 hover:text-foreground/100" />
           </Link>
         )}
       </div>
-    </div>
-    <Text variant="light" size={16}>
-      {project.description}
-    </Text>
-    <div className="flex items-center gap-2">
-      {project.techStack.map((tech, index) => (
-        <React.Fragment key={tech}>
-          <Text variant="light" size={14} className="text-link">
-            {tech}
-          </Text>
-          {index !== project.techStack.length - 1 ? (
-            <Text variant="light" size={14}>
-              -
-            </Text>
-          ) : null}
-        </React.Fragment>
-      ))}
     </div>
   </div>
 );
