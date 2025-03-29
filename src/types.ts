@@ -1,8 +1,13 @@
+type Image = Readonly<{
+  src: string;
+  alt: string;
+}>;
+
 export type Project = Readonly<{
   title: string;
-  image: string;
+  images: Image[];
   icon?: React.ElementType;
-  description: string;
+  descriptions: string[];
   website?: string;
   github?: string;
   techStack: string[];

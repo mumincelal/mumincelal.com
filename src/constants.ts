@@ -3,7 +3,7 @@ import { GitHubIcon } from "~/icons/github";
 import { LinkedinIcon } from "~/icons/linkedin";
 import { UpworkIcon } from "~/icons/upwork";
 import { XIcon } from "~/icons/x";
-import { Experience, Project, Social } from "~/types";
+import { Project, Social } from "~/types";
 
 export const PageUrl = {
   Home: "/",
@@ -13,72 +13,63 @@ export const PageUrl = {
 
 export const projects: Project[] = [
   {
-    title: "Project 1",
-    image: "/images/project-1.png",
-    description: "Description 1",
-    website: "https://example.com/project1",
-    github: "https://github.com/example/project1",
-    techStack: ["JavaScript", "React"]
+    title: "Syntonym Cloud",
+    images: [
+      {
+        src: "/images/syntonym-cloud/desktop-login.png",
+        alt: "Syntonym Cloud - Desktop Login"
+      },
+      {
+        src: "/images/syntonym-cloud/desktop-job-process.png",
+        alt: "Syntonym Cloud - Desktop Job Process"
+      },
+      {
+        src: "/images/syntonym-cloud/desktop-account.png",
+        alt: "Syntonym Cloud - Desktop Account"
+      },
+      {
+        src: "/images/syntonym-cloud/mobile-login.png",
+        alt: "Syntonym Cloud - Mobile Login"
+      },
+      {
+        src: "/images/syntonym-cloud/mobile-job-process-1.png",
+        alt: "Syntonym Cloud - Mobile Job Process 1"
+      },
+      {
+        src: "/images/syntonym-cloud/mobile-job-process-2.png",
+        alt: "Syntonym Cloud - Mobile Job Process 2"
+      },
+      {
+        src: "/images/syntonym-cloud/mobile-account-1.png",
+        alt: "Syntonym Cloud - Mobile Account 1"
+      },
+      {
+        src: "/images/syntonym-cloud/mobile-account-2.png",
+        alt: "Syntonym Cloud - Mobile Account 2"
+      }
+    ],
+    descriptions: [
+      "Syntonym maximizes privacy compliance by removing sensitive biometric data in image and video, while preserving valuable analytical metrics to enable model training and advanced video analytics."
+    ],
+    techStack: ["Next.js", "TypeScript", "Tailwind", "Nest.js", "PostgreSQL"]
   },
   {
-    title: "Project 2",
-    image: "/images/project-2.png",
-    description: "Description 2",
-    website: "https://example.com/project2",
-    github: "https://github.com/example/project2",
-    techStack: ["TypeScript", "Node.js"]
-  },
-  {
-    title: "Project 3",
-    image: "/images/project-1.png",
-    description: "Description 3",
-    website: "https://example.com/project3",
-    github: "https://github.com/example/project3",
-    techStack: ["Python", "Django"]
-  },
-  {
-    title: "Project 4",
-    image: "/images/project-2.png",
-    description: "Description 4",
-    website: "https://example.com/project4",
-    github: "https://github.com/example/project4",
-    techStack: ["Go", "Gin"]
+    title: "Syntonym Virtual Camera",
+    images: [
+      {
+        src: "/images/syntonym-virtual-camera/desktop-login.png",
+        alt: "Syntonym Virtual Camera - Desktop Login"
+      },
+      {
+        src: "/images/syntonym-virtual-camera/desktop-dashboard.png",
+        alt: "Syntonym Virtual Camera - Desktop Dashboard"
+      }
+    ],
+    descriptions: [
+      "Syntonym's face generation technology creates unique and anonymous faces in real-time, whether on mobile or local platforms, ensuring individuals have a secure and reliable solution to safeguard their privacy and anonymity when required."
+    ],
+    techStack: ["Electron", "Javascript", "React", "Tailwind"]
   }
-];
-
-export const experiences: Experience[] = [
-  // {
-  //   title: "Software Engineer",
-  //   company: "Company 1",
-  //   location: "Location 1",
-  //   startDate: "Jan 2020",
-  //   endDate: "Present",
-  //   description: "Description 1"
-  // },
-  // {
-  //   title: "Software Engineer",
-  //   company: "Company 2",
-  //   location: "Location 2",
-  //   startDate: "Jan 2018",
-  //   endDate: "Dec 2019",
-  //   description: "Description 2"
-  // },
-  // {
-  //   title: "Software Engineer",
-  //   company: "Company 3",
-  //   location: "Location 3",
-  //   startDate: "Jan 2016",
-  //   endDate: "Dec 2017",
-  //   description: "Description 3"
-  // },
-  // {
-  //   title: "Software Engineer",
-  //   company: "Company 4",
-  //   location: "Location 4",
-  //   startDate: "Jan 2015",
-  //   endDate: "Dec 2015",
-  //   description: "Description 4"
-  // }
 ];
 
 export const socials: Social[] = [
