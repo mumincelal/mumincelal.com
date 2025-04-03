@@ -4,6 +4,7 @@ type Image = Readonly<{
 }>;
 
 export type Project = Readonly<{
+  slug: string;
   title: string;
   images: Image[];
   icon?: React.ElementType;

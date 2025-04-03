@@ -26,7 +26,7 @@ const RootLayout = ({
   <html lang="en" suppressHydrationWarning>
     <body className={cn("min-h-screen", inter.className)}>
       <Providers>
-        <div className="container mx-auto flex min-h-screen max-w-5xl flex-col gap-30 px-10 pt-10 pb-20 lg:px-0">
+        <div className="container mx-auto flex min-h-screen max-w-5xl flex-col gap-15 px-10 pt-10 pb-20 md:gap-30 lg:px-0">
           <Header />
           <main className="flex-1">{children}</main>
         </div>

@@ -13,6 +13,7 @@ export const PageUrl = {
 
 export const projects: Project[] = [
   {
+    slug: "syntonym-cloud",
     title: "Syntonym Cloud",
     images: [
       {
@@ -54,6 +55,7 @@ export const projects: Project[] = [
     techStack: ["Next.js", "TypeScript", "Tailwind", "Nest.js", "PostgreSQL"]
   },
   {
+    slug: "syntonym-virtual-camera",
     title: "Syntonym Virtual Camera",
     images: [
       {
@@ -69,6 +71,28 @@ export const projects: Project[] = [
       "Syntonym's face generation technology creates unique and anonymous faces in real-time, whether on mobile or local platforms, ensuring individuals have a secure and reliable solution to safeguard their privacy and anonymity when required."
     ],
     techStack: ["Electron", "Javascript", "React", "Tailwind"]
+  },
+  {
+    slug: "innova-website",
+    title: "Innova Website",
+    images: [
+      {
+        src: "/images/innova-website/desktop-home.png",
+        alt: "Innova Website - Desktop Home"
+      },
+      {
+        src: "/images/innova-website/desktop-blog.png",
+        alt: "Innova Website - Desktop Blog"
+      },
+      {
+        src: "/images/innova-website/desktop-cms.png",
+        alt: "Innova Website - Desktop CMS"
+      }
+    ],
+    descriptions: [
+      "İnnova Bilişim Çözümleri, a Türk Telekom subsidiary, is Turkey's leading IT solutions company with its expert staff of more than 1,400 people with knowledge in different technologies."
+    ],
+    techStack: ["Next.js", "TypeScript", "PayloadCMS"]
   }
 ];
 

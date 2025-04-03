@@ -21,8 +21,7 @@ export const Header = () => {
       <Link href={PageUrl.Home}>
         <Text
           variant="extralight"
-          size={24}
-          className="hover:text-foreground/60"
+          className="text-2xl hover:text-foreground/60"
         >
           MC.
         </Text>
@@ -38,12 +37,12 @@ export const Header = () => {
 const DesktopHeader = () => (
   <>
     <Link href={PageUrl.Projects}>
-      <Text variant="extralight" size={18} className="hover:text-foreground/60">
+      <Text variant="extralight" className="text-lg hover:text-foreground/60">
         Projects
       </Text>
     </Link>
     <Link href={PageUrl.Contact}>
-      <Text variant="extralight" size={18} className="hover:text-foreground/60">
+      <Text variant="extralight" className="text-lg hover:text-foreground/60">
         Contact
       </Text>
     </Link>
@@ -60,14 +59,14 @@ const MobileHeader = () => (
     <DropdownMenuContent className="w-20">
       <DropdownMenuItem>
         <Link href={PageUrl.Projects}>
-          <Text variant="extralight" size={16}>
+          <Text variant="extralight" className="text-base">
             Projects
           </Text>
         </Link>
       </DropdownMenuItem>
       <DropdownMenuItem>
         <Link href={PageUrl.Contact}>
-          <Text variant="extralight" size={16}>
+          <Text variant="extralight" className="text-base">
             Contact
           </Text>
         </Link>

@@ -4,17 +4,16 @@ import { RightArrowIcon } from "~/icons/right-arrow";
 
 export const Intro = () => (
   <div className="grid grid-cols-1 gap-6">
-    <Text variant="extralight" size={16}>
+    <Text variant="extralight" className="text-base">
       Hey, I'm
     </Text>
     <Text
       variant="medium"
-      size={96}
-      className="text-balance bg-gradient-to-r from-gradient-1 via-gradient-2 to-gradient-3 bg-clip-text text-transparent"
+      className="text-balance bg-gradient-to-r from-gradient-1 via-gradient-2 to-gradient-3 bg-clip-text text-3xl text-transparent md:text-5xl lg:text-8xl"
     >
       Mümin Celal Pinar
     </Text>
-    <Text variant="extralight" size={18} className="text-justify">
+    <Text variant="extralight" className="text-justify text-lg">
       I'm a <strong>a Software Engineer</strong> who loves creating digital
       solutions that work well and make life easier. With experience in
       different industries, I'm all about building reliable and efficient apps
@@ -23,7 +22,7 @@ export const Intro = () => (
     </Text>
     <Link href="mailto:hello@mumincelal.com" passHref>
       <div className="flex items-center gap-2">
-        <Text variant="light" size={24}>
+        <Text variant="light" className="text-xl md:text-2xl">
           Say hi
         </Text>
         <RightArrowIcon />

@@ -8,20 +8,20 @@ type ExperienceContainerProps = Readonly<{
 export const ExperienceCard = ({ experience }: ExperienceContainerProps) => (
   <div className="grid grid-cols-1 gap-3">
     <div className="flex items-center justify-between">
-      <Text variant="light" size={24}>
+      <Text variant="light" className="text-2xl">
         {experience.title}
       </Text>
-      <Text variant="light" size={16}>
+      <Text variant="light" className="text-base">
         {experience.startDate} - {experience.endDate}
       </Text>
     </div>
-    <Text variant="light" size={14} className="text-link">
+    <Text variant="light" className="text-link text-sm">
       {experience.company} - {experience.location}
     </Text>
     <ul>
       {experience.descriptions.map((description) => (
         <li key={description}>
-          <Text variant="light" size={16}>
+          <Text variant="light" className="text-base">
             {description}
           </Text>
         </li>

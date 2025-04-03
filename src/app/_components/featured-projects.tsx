@@ -4,7 +4,7 @@ import { projects } from "~/constants";
 
 export const FeaturedProjects = () => (
   <div className="grid grid-cols-1 gap-12">
-    <Text variant="light" size={18} className="uppercase">
+    <Text variant="light" className="text-lg uppercase">
       Featured Projects
     </Text>
     <div className="grid grid-cols-1 gap-15 md:grid-cols-2">

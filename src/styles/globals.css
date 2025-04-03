@@ -13,6 +13,7 @@
   --color-gradient-1: hsl(var(--gradient-1));
   --color-gradient-2: hsl(var(--gradient-2));
   --color-gradient-3: hsl(var(--gradient-3));
+  --color-badge: hsl(var(--foreground), 0.1);
 }
 
 /*

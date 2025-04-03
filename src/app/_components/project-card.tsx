@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
 import { AspectRatio } from "~/components/aspect-ratio";
+import { Badge } from "~/components/badge";
 import { Text } from "~/components/text";
 import { GitHubIcon } from "~/icons/github";
 import { LinkIcon } from "~/icons/link";
@@ -12,7 +12,7 @@ type ProjectCardProps = Readonly<{
 }>;
 
 export const ProjectCard = ({ project }: ProjectCardProps) => (
-  <div className="grid grid-cols-1 gap-3" key={project.title}>
+  <div className="relative isolate grid grid-cols-1 gap-3" key={project.title}>
     <AspectRatio ratio={16 / 9} className="bg-background">
       <Image
         className="size-full object-fill"
@@ -22,35 +22,28 @@ export const ProjectCard = ({ project }: ProjectCardProps) => (
         priority
       />
     </AspectRatio>
-    <Text variant="light" className="text-foreground" size={16}>
-      {project.title}
-    </Text>
+    <Link href={`/projects/${project.slug}`}>
+      <span className="absolute inset-0" />
+      <Text variant="light" className="text-base text-foreground">
+        {project.title}
+      </Text>
+    </Link>
     <div className="grid grid-cols-1 gap-2">
       {project.descriptions.map((description, index) => (
         <Text
           // biome-ignore lint/suspicious/noArrayIndexKey: <explanation>
           key={index}
           variant="light"
-          className="text-foreground/50"
-          size={14}
+          className="text-foreground/50 text-sm"
         >
           {description}
         </Text>
       ))}
     </div>
     <div className="flex items-center justify-between">
-      <div className="flex items-center gap-2">
-        {project.techStack.map((tech, index) => (
-          <React.Fragment key={tech}>
-            <Text variant="light" size={14} className="text-link">
-              {tech}
-            </Text>
-            {index !== project.techStack.length - 1 ? (
-              <Text variant="light" size={14}>
-                -
-              </Text>
-            ) : null}
-          </React.Fragment>
+      <div className="flex flex-wrap items-center gap-2">
+        {project.techStack.map((tech) => (
+          <Badge key={tech}>{tech}</Badge>
         ))}
       </div>
       <div className="flex items-center gap-2">
