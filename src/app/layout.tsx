@@ -1,22 +1,31 @@
 import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import localFont from "next/font/local";
 import { Providers } from "~/app/providers";
 import { cn } from "~/lib/tailwind";
 import "~/styles/globals.css";
 
-const inter = Inter({
-  subsets: ["latin"],
-  variable: "--font-work-sans"
+const trafikaSans = localFont({
+  src: "./fonts/trafika-sans-regular.otf",
+  style: "normal",
+  variable: "--font-trafika-sans",
+  display: "swap"
+});
+
+const sfProDisplay = localFont({
+  src: "./fonts/sf-pro-display-regular.otf",
+  style: "normal",
+  variable: "--font-sf-pro-display",
+  display: "swap"
 });
 
 export const metadata: Metadata = {
   title: {
     template: "%s",
-    default: "Mümin Celal Pinar"
+    default: "Mümin Celal Pinar - Product Minded Developer"
   },
-  description: "Mümin Celal Pinar"
+  description: "Mümin Celal Pinar - Product Minded Developer"
 };
 
 const RootLayout = ({
@@ -25,11 +34,17 @@ const RootLayout = ({
   children: React.ReactNode;
 }>) => (
   <html lang="en" suppressHydrationWarning>
-    <body className={cn("min-h-screen", inter.className)}>
+    <body
+      className={cn(
+        "min-h-screen bg-white-100 font-trafika-sans",
+        trafikaSans.variable,
+        sfProDisplay.variable
+      )}
+    >
       <Providers>
-        <div className="container mx-auto flex min-h-screen max-w-5xl flex-col gap-15 px-10 pt-10 pb-20 md:gap-30 lg:px-0">
-          <main className="flex-1">{children}</main>
-        </div>
+        <main className="mx-auto grid max-w-xl grid-cols-1 justify-items-center gap-28 p-4 md:max-w-2xl lg:max-w-3xl xl:max-w-4xl">
+          {children}
+        </main>
       </Providers>
       <SpeedInsights />
       <Analytics />
