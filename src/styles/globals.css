@@ -17,6 +17,7 @@
   --color-light-600: var(--light-600);
   --color-light-700: var(--light-700);
   --color-light-800: var(--light-800);
+  --color-light-900: var(--light-900);
 
   --color-gray-100: var(--gray-100);
   --color-gray-200: var(--gray-200);
@@ -60,6 +61,7 @@
     --light-600: #e9e9e9;
     --light-700: #ededed;
     --light-800: #e2e2e2;
+    --light-900: #d6d6d6;
 
     --gray-100: #9c9c9c;
     --gray-200: #999999;

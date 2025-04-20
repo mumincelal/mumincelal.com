@@ -17,8 +17,8 @@ export const projects = [
       "/images/projects/syntonym-cloud/desktop-login.png",
       "/images/projects/syntonym-cloud/mobile-job-process-part-1.png",
       "/images/projects/syntonym-cloud/mobile-job-process-part-2.png",
-      "/images/projects/syntonym-cloud/mobile-job-account-part-1.png",
-      "/images/projects/syntonym-cloud/mobile-job-account-part-2.png",
+      "/images/projects/syntonym-cloud/mobile-account-part-1.png",
+      "/images/projects/syntonym-cloud/mobile-account-part-2.png",
       "/images/projects/syntonym-cloud/mobile-login.png"
     ]
   },
@@ -38,7 +38,7 @@ export const projects = [
     ]
   },
   {
-    key: "innova",
+    key: "innova-website",
     title: "Innova Website",
     logo: "/images/projects/innova-website/logo.png",
     descriptionParagraphs: [
