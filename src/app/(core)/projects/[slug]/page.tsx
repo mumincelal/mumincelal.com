@@ -67,15 +67,17 @@ const ProjectPage = async ({
             />
           </div>
         ))}
-        {project.descriptionParagraphs.map((paragraph, index) => (
-          <p
-            // biome-ignore lint/suspicious/noArrayIndexKey: <explanation>
-            key={index}
-            className="text-pretty font-normal font-sf-pro-display text-dark-400/60 text-lg"
-          >
-            {paragraph}
-          </p>
-        ))}
+        <div className="grid grid-cols-1 gap-4">
+          {project.descriptionParagraphs.map((paragraph, index) => (
+            <p
+              // biome-ignore lint/suspicious/noArrayIndexKey: <explanation>
+              key={index}
+              className="text-pretty font-normal font-sf-pro-display text-dark-400/60 text-lg"
+            >
+              {paragraph}
+            </p>
+          ))}
+        </div>
       </div>
     </>
   );
