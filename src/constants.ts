@@ -1,4 +1,4 @@
-import { Project } from "~/types";
+import { Client, Experience, Project } from "~/types";
 
 export const projects = [
   {
@@ -54,3 +54,41 @@ export const projects = [
     ]
   }
 ] satisfies Project[];
+
+export const clients = [
+  {
+    key: "innova",
+    name: "Innova",
+    logo: "/images/clients/innova.svg",
+    link: "https://innova.com"
+  },
+  {
+    key: "syntonym",
+    name: "Syntonym",
+    logo: "/images/clients/syntonym.svg",
+    link: "https://syntonym.com"
+  },
+  {
+    key: "invemo",
+    name: "Invemo",
+    logo: "/images/clients/invemo.svg",
+    link: "https://invemo.com"
+  }
+] satisfies Client[];
+
+export const experiences = [
+  {
+    key: "innova",
+    company: "Innova",
+    role: "Software Engineer",
+    startYear: 2022,
+    endYear: 2023
+  },
+  {
+    key: "syntonym",
+    company: "Syntonym",
+    role: "Software Engineer",
+    startYear: 2023,
+    endYear: null
+  }
+] satisfies Experience[];

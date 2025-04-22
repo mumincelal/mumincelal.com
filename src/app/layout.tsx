@@ -20,6 +20,13 @@ const sfProDisplay = localFont({
   display: "swap"
 });
 
+const sfProDisplayMedium = localFont({
+  src: "./fonts/sf-pro-display-medium.otf",
+  style: "normal",
+  variable: "--font-sf-pro-display-medium",
+  display: "swap"
+});
+
 export const metadata: Metadata = {
   title: {
     template: "%s",
@@ -38,7 +45,8 @@ const RootLayout = ({
       className={cn(
         "min-h-screen bg-white-100 font-trafika-sans",
         trafikaSans.variable,
-        sfProDisplay.variable
+        sfProDisplay.variable,
+        sfProDisplayMedium.variable
       )}
     >
       <Providers>

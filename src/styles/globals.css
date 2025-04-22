@@ -4,6 +4,7 @@
 @theme {
   --font-trafika-sans: var(--font-trafika-sans), sans-serif;
   --font-sf-pro-display: var(--font-sf-pro-display), sans-serif;
+  --font-sf-pro-display-medium: var(--font-sf-pro-display-medium), sans-serif;
 
   --color-*: initial;
   --color-transparent: transparent;
@@ -22,6 +23,7 @@
   --color-gray-100: var(--gray-100);
   --color-gray-200: var(--gray-200);
   --color-gray-300: var(--gray-300);
+  --color-gray-400: var(--gray-400);
 
   --color-dark-100: var(--dark-100);
   --color-dark-200: var(--dark-200);
@@ -66,6 +68,7 @@
     --gray-100: #9c9c9c;
     --gray-200: #999999;
     --gray-300: #868686;
+    --gray-400: #646464;
 
     --dark-100: #161616;
     --dark-200: #14151a;
