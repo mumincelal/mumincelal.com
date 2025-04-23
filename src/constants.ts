@@ -57,38 +57,98 @@ export const projects = [
 
 export const clients = [
   {
-    key: "innova",
-    name: "Innova",
-    logo: "/images/clients/innova.svg",
-    link: "https://innova.com"
-  },
-  {
     key: "syntonym",
     name: "Syntonym",
     logo: "/images/clients/syntonym.svg",
     link: "https://syntonym.com"
   },
   {
+    key: "innova",
+    name: "Innova",
+    logo: "/images/clients/innova.svg",
+    link: "https://innova.com.tr"
+  },
+  {
+    key: "intertech",
+    name: "Intertech",
+    logo: "/images/clients/intertech.svg",
+    link: "https://intertech.com.tr"
+  },
+  {
     key: "invemo",
     name: "Invemo",
     logo: "/images/clients/invemo.svg",
     link: "https://invemo.com"
+  },
+  {
+    key: "panates",
+    name: "Panates",
+    logo: "/images/clients/panates.svg",
+    link: "https://panates.com"
+  },
+  {
+    key: "cool",
+    name: "Cool Digital",
+    logo: "/images/clients/cool-digital.svg",
+    link: "https://letsbecool.com"
   }
 ] satisfies Client[];
 
 export const experiences = [
   {
-    key: "innova",
-    company: "Innova",
-    role: "Software Engineer",
+    key: "freelancer",
+    company: "Freelancer & Soloprenuer",
+    role: "",
+    startYear: 2021,
+    endYear: null
+  },
+  {
+    key: "intertech",
+    company: "Intertech",
+    role: "Senior Software Engineer",
+    startYear: 2021,
+    endYear: 2024
+  },
+  {
+    key: "invemo",
+    company: "Invemo",
+    role: "Senior Software Engineer",
     startYear: 2022,
     endYear: 2023
   },
   {
-    key: "syntonym",
-    company: "Syntonym",
+    key: "enbd",
+    company: "Emirates NBD",
+    role: "Senior Software Engineer",
+    startYear: 2021,
+    endYear: 2022
+  },
+  {
+    key: "panates",
+    company: "Panates",
+    role: "Senior Software Engineer",
+    startYear: 2020,
+    endYear: 2021
+  },
+  {
+    key: "cool",
+    company: "Cool",
     role: "Software Engineer",
-    startYear: 2023,
-    endYear: null
+    startYear: 2019,
+    endYear: 2020
+  },
+  {
+    key: "epam",
+    company: "Epam (Formerly EMAKINA.TR)",
+    role: "Software Engineer",
+    startYear: 2018,
+    endYear: 2019
+  },
+  {
+    key: "emse",
+    company: "Emse",
+    role: "Software Engineer",
+    startYear: 2016,
+    endYear: 2018
   }
 ] satisfies Experience[];
