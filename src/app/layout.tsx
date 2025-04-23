@@ -43,14 +43,14 @@ const RootLayout = ({
   <html lang="en" suppressHydrationWarning>
     <body
       className={cn(
-        "min-h-screen bg-white-100 font-trafika-sans",
+        "min-h-screen bg-light-200 font-trafika-sans",
         trafikaSans.variable,
         sfProDisplay.variable,
         sfProDisplayMedium.variable
       )}
     >
       <Providers>
-        <main className="mx-auto grid max-w-xl grid-cols-1 justify-items-center gap-28 p-4 md:max-w-2xl lg:max-w-3xl xl:max-w-4xl">
+        <main className="mx-auto grid max-w-xl grid-cols-1 justify-items-center gap-28 px-4 py-32 md:max-w-2xl lg:max-w-3xl xl:max-w-4xl">
           {children}
         </main>
       </Providers>
