@@ -1,131 +1,154 @@
-import { BlueskyIcon } from "~/icons/bluesky";
-import { GitHubIcon } from "~/icons/github";
-import { LinkedinIcon } from "~/icons/linkedin";
-import { UpworkIcon } from "~/icons/upwork";
-import { XIcon } from "~/icons/x";
-import { Project, Social } from "~/types";
+import { Client, Experience, Project } from "~/types";
 
-export const PageUrl = {
-  Home: "/",
-  Projects: "/projects",
-  Contact: "/contact"
-} as const;
-
-export const projects: Project[] = [
+export const projects = [
   {
-    slug: "syntonym-cloud",
+    key: "syntonym-cloud",
     title: "Syntonym Cloud",
+    logo: "/images/projects/syntonym-cloud/logo.png",
+    descriptionParagraphs: [
+      // First paragraph should be between 125 and 132 characters
+      "A cloud-based platform for managing and analyzing large datasets, providing powerful tools for data visualization and machine learning."
+    ],
+    link: "/projects/syntonym-cloud",
+    showcaseImage: "/images/projects/syntonym-cloud/desktop-job-process.png",
     images: [
-      {
-        src: "/images/syntonym-cloud/desktop-login.png",
-        alt: "Syntonym Cloud - Desktop Login"
-      },
-      {
-        src: "/images/syntonym-cloud/desktop-job-process.png",
-        alt: "Syntonym Cloud - Desktop Job Process"
-      },
-      {
-        src: "/images/syntonym-cloud/desktop-account.png",
-        alt: "Syntonym Cloud - Desktop Account"
-      },
-      {
-        src: "/images/syntonym-cloud/mobile-login.png",
-        alt: "Syntonym Cloud - Mobile Login"
-      },
-      {
-        src: "/images/syntonym-cloud/mobile-job-process-1.png",
-        alt: "Syntonym Cloud - Mobile Job Process 1"
-      },
-      {
-        src: "/images/syntonym-cloud/mobile-job-process-2.png",
-        alt: "Syntonym Cloud - Mobile Job Process 2"
-      },
-      {
-        src: "/images/syntonym-cloud/mobile-account-1.png",
-        alt: "Syntonym Cloud - Mobile Account 1"
-      },
-      {
-        src: "/images/syntonym-cloud/mobile-account-2.png",
-        alt: "Syntonym Cloud - Mobile Account 2"
-      }
-    ],
-    descriptions: [
-      "Syntonym maximizes privacy compliance by removing sensitive biometric data in image and video, while preserving valuable analytical metrics to enable model training and advanced video analytics."
-    ],
-    techStack: ["Next.js", "TypeScript", "Tailwind", "Nest.js", "PostgreSQL"]
+      "/images/projects/syntonym-cloud/desktop-job-process.png",
+      "/images/projects/syntonym-cloud/desktop-account.png",
+      "/images/projects/syntonym-cloud/desktop-login.png",
+      "/images/projects/syntonym-cloud/mobile-job-process-part-1.png",
+      "/images/projects/syntonym-cloud/mobile-job-process-part-2.png",
+      "/images/projects/syntonym-cloud/mobile-account-part-1.png",
+      "/images/projects/syntonym-cloud/mobile-account-part-2.png",
+      "/images/projects/syntonym-cloud/mobile-login.png"
+    ]
   },
   {
-    slug: "syntonym-virtual-camera",
-    title: "Syntonym Virtual Camera",
+    key: "syntonym-virtual-camera",
+    title: "Syntonym Virtual Cam",
+    logo: "/images/projects/syntonym-virtual-camera/logo.png",
+    descriptionParagraphs: [
+      "A virtual camera application that allows users to create and customize their own virtual camera feeds, with advanced features for video conferencing and streaming."
+    ],
+    link: "/projects/syntonym-virtual-camera",
+    showcaseImage:
+      "/images/projects/syntonym-virtual-camera/desktop-dashboard.png",
     images: [
-      {
-        src: "/images/syntonym-virtual-camera/desktop-login.png",
-        alt: "Syntonym Virtual Camera - Desktop Login"
-      },
-      {
-        src: "/images/syntonym-virtual-camera/desktop-dashboard.png",
-        alt: "Syntonym Virtual Camera - Desktop Dashboard"
-      }
-    ],
-    descriptions: [
-      "Syntonym's face generation technology creates unique and anonymous faces in real-time, whether on mobile or local platforms, ensuring individuals have a secure and reliable solution to safeguard their privacy and anonymity when required."
-    ],
-    techStack: ["Electron", "Javascript", "React", "Tailwind"]
+      "/images/projects/syntonym-virtual-camera/desktop-dashboard.png",
+      "/images/projects/syntonym-virtual-camera/desktop-login.png"
+    ]
   },
   {
-    slug: "innova-website",
+    key: "innova-website",
     title: "Innova Website",
+    logo: "/images/projects/innova-website/logo.png",
+    descriptionParagraphs: [
+      "A web application that provides a platform for users to share and discover innovative ideas, with features for collaboration and feedback."
+    ],
+    link: "/projects/innova-website",
+    showcaseImage: "/images/projects/innova-website/desktop-home.png",
     images: [
-      {
-        src: "/images/innova-website/desktop-home.png",
-        alt: "Innova Website - Desktop Home"
-      },
-      {
-        src: "/images/innova-website/desktop-blog.png",
-        alt: "Innova Website - Desktop Blog"
-      },
-      {
-        src: "/images/innova-website/desktop-cms.png",
-        alt: "Innova Website - Desktop CMS"
-      }
-    ],
-    descriptions: [
-      "İnnova Bilişim Çözümleri, a Türk Telekom subsidiary, is Turkey's leading IT solutions company with its expert staff of more than 1,400 people with knowledge in different technologies."
-    ],
-    techStack: ["Next.js", "TypeScript", "PayloadCMS"]
+      "/images/projects/innova-website/desktop-home.png",
+      "/images/projects/innova-website/desktop-blog.png",
+      "/images/projects/innova-website/desktop-blog-detail.png",
+      "/images/projects/innova-website/desktop-cms.png"
+    ]
   }
-];
+] satisfies Project[];
 
-export const socials: Social[] = [
+export const clients = [
   {
-    id: "github",
-    name: "@mumincelal",
-    icon: GitHubIcon,
-    href: "https://github.com/mumincelal"
+    key: "syntonym",
+    name: "Syntonym",
+    logo: "/images/clients/syntonym.svg",
+    link: "https://syntonym.com"
   },
   {
-    id: "upwork",
-    name: "@mumincelal",
-    icon: UpworkIcon,
-    // biome-ignore lint/nursery/noSecrets: <explanation>
-    href: "https://www.upwork.com/freelancers/~01f0f28edf2a156eab"
+    key: "innova",
+    name: "Innova",
+    logo: "/images/clients/innova.svg",
+    link: "https://innova.com.tr"
   },
   {
-    id: "linkedin",
-    name: "@mumin-celal-pinar",
-    icon: LinkedinIcon,
-    href: "https://www.linkedin.com/in/mumin-celal-pinar"
+    key: "intertech",
+    name: "Intertech",
+    logo: "/images/clients/intertech.svg",
+    link: "https://intertech.com.tr"
   },
   {
-    id: "x",
-    name: "@mumin_celal",
-    icon: XIcon,
-    href: "https://x.com/mumin_celal"
+    key: "invemo",
+    name: "Invemo",
+    logo: "/images/clients/invemo.svg",
+    link: "https://invemo.com"
   },
   {
-    id: "bluesky",
-    name: "@mumincelal.bsky.social",
-    icon: BlueskyIcon,
-    href: "https://bsky.app/profile/mumincelal.bsky.social"
+    key: "panates",
+    name: "Panates",
+    logo: "/images/clients/panates.svg",
+    link: "https://panates.com"
+  },
+  {
+    key: "cool",
+    name: "Cool Digital",
+    logo: "/images/clients/cool-digital.svg",
+    link: "https://letsbecool.com"
   }
-];
+] satisfies Client[];
+
+export const experiences = [
+  {
+    key: "freelancer",
+    company: "Freelancer & Soloprenuer",
+    role: "",
+    startYear: 2021,
+    endYear: null
+  },
+  {
+    key: "intertech",
+    company: "Intertech",
+    role: "Senior Software Engineer",
+    startYear: 2021,
+    endYear: 2024
+  },
+  {
+    key: "invemo",
+    company: "Invemo",
+    role: "Senior Software Engineer",
+    startYear: 2022,
+    endYear: 2023
+  },
+  {
+    key: "enbd",
+    company: "Emirates NBD",
+    role: "Senior Software Engineer",
+    startYear: 2021,
+    endYear: 2022
+  },
+  {
+    key: "panates",
+    company: "Panates",
+    role: "Senior Software Engineer",
+    startYear: 2020,
+    endYear: 2021
+  },
+  {
+    key: "cool",
+    company: "Cool",
+    role: "Software Engineer",
+    startYear: 2019,
+    endYear: 2020
+  },
+  {
+    key: "epam",
+    company: "Epam (Formerly EMAKINA.TR)",
+    role: "Software Engineer",
+    startYear: 2018,
+    endYear: 2019
+  },
+  {
+    key: "emse",
+    company: "Emse",
+    role: "Software Engineer",
+    startYear: 2016,
+    endYear: 2018
+  }
+] satisfies Experience[];
