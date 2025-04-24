@@ -31,7 +31,7 @@ export const ProjectShowcase = ({
         height={3000}
       />
     </div>
-    <div className="flex w-full flex-col gap-4 md:w-[40%] md:pt-4 md:pb-8">
+    <div className="flex flex-col gap-4 md:w-[40%] md:pt-4 md:pb-8">
       <GradientWrapper>
         <ShadowWrapper>
           <Image
