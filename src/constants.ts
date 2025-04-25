@@ -7,7 +7,9 @@ export const projects = [
     logo: "/images/projects/syntonym-cloud/logo.png",
     descriptionParagraphs: [
       // First paragraph should be between 125 and 132 characters
-      "A cloud-based platform for managing and analyzing large datasets, providing powerful tools for data visualization and machine learning."
+      "A cloud-based platform that privacy-focused solution by removing sensitive biometric data from images and videos.",
+      "As a software developer working with a tech stack that includes NestJS, NextJS, TypeScript, and PostgreSQL, I leverage these technologies to build scalable and efficient applications. NestJS allows me to create a robust and maintainable backend, while NextJS, with its server-side rendering capabilities, ensures a seamless, fast, and SEO-friendly frontend. TypeScript helps in building type-safe applications, preventing runtime errors and enhancing the development experience. PostgreSQL provides a reliable, structured database solution for managing complex datasets, and Drizzle ORM simplifies database interactions with its lightweight, type-safe approach.",
+      "In addition to these technologies, I also utilize Tailwind CSS to build responsive, clean, and modern user interfaces, ensuring the best user experience. The integration of shadcn components allows for consistent, high-quality UI components, which speeds up development and ensures a polished, cohesive look and feel. By combining these tools, I’m able to build a highly efficient, privacy-compliant platform that can handle complex data processing, all while providing users with a secure, user-friendly experience."
     ],
     link: "/projects/syntonym-cloud",
     showcaseImage: "/images/projects/syntonym-cloud/desktop-job-process.png",
