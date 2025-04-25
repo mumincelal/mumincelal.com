@@ -1,3 +1,6 @@
+"use client";
+
+import { motion } from "motion/react";
 import Image from "next/image";
 import Link from "next/link";
 import { Button } from "~/components/button";
@@ -5,7 +8,16 @@ import { GradientWrapper } from "~/components/gradient-wrapper";
 import { ShadowWrapper } from "~/components/shadow-wrapper";
 
 export const Hero = () => (
-  <section className="relative flex flex-col items-center justify-between gap-28 md:h-96 md:flex-row md:gap-8">
+  <motion.section
+    initial={{ opacity: 0 }}
+    animate={{ opacity: 1 }}
+    transition={{
+      duration: 0.8,
+      delay: 0.5,
+      opacity: { ease: "easeIn" }
+    }}
+    className="relative flex flex-col items-center justify-between gap-28 md:h-96 md:flex-row md:gap-8"
+  >
     <div className="z-10 flex flex-col gap-6">
       <Link href="/">
         <GradientWrapper>
@@ -53,5 +65,5 @@ export const Hero = () => (
     <div className="absolute size-full">
       <Image src="/images/background/hero.svg" alt="Hero Background" fill />
     </div>
-  </section>
+  </motion.section>
 );

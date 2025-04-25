@@ -1,3 +1,4 @@
+"use client";
 import { ProjectShowcase } from "~/app/(core)/_components/project-showcase";
 import { projects } from "~/constants";
 

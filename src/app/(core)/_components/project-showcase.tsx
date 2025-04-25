@@ -1,3 +1,6 @@
+"use client";
+
+import { motion } from "motion/react";
 import Image from "next/image";
 import Link from "next/link";
 import { Button } from "~/components/button";
@@ -11,15 +14,27 @@ type ProjectShowcaseProps = Readonly<{ project: Project }> &
 
 export const ProjectShowcase = ({
   className,
-  project,
-  ...props
+  project
 }: ProjectShowcaseProps) => (
-  <div
+  <motion.div
+    initial={{ opacity: 0, y: 30 }}
+    animate={{ opacity: 1, y: 0 }}
+    transition={{
+      duration: 0.5,
+      opacity: { ease: "easeIn" }
+    }}
+    whileInView={{
+      opacity: 1,
+      y: 0,
+      transition: {
+        duration: 0.5,
+        opacity: { ease: "easeIn" }
+      }
+    }}
     className={cn(
       "flex flex-col-reverse items-center gap-8 rounded-3xl bg-light-400 pt-5 pr-0 pl-8 md:flex-row md:pt-12 md:pr-12 md:pl-5",
       className
     )}
-    {...props}
   >
     <div className="size-full md:relative md:w-[60%]">
       <Image
@@ -57,5 +72,5 @@ export const ProjectShowcase = ({
         </GradientWrapper>
       </Link>
     </div>
-  </div>
+  </motion.div>
 );
