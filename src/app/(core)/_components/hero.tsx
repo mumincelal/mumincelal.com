@@ -52,11 +52,11 @@ export const Hero = () => (
       <GradientWrapper>
         <ShadowWrapper>
           <Image
-            src="/images/mumin-celal.png"
+            src="/images/logos/my-website.svg"
             alt="Mumin Celal"
             width={220}
             height={330}
-            className="rounded-lg object-cover p-1"
+            className="rounded-lg object-contain p-1"
             priority
           />
         </ShadowWrapper>
