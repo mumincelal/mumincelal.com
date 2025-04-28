@@ -50,7 +50,7 @@ const RootLayout = ({
       )}
     >
       <Providers>
-        <main className="mx-auto grid max-w-xl grid-cols-1 justify-items-center gap-28 px-4 py-32 md:max-w-2xl lg:max-w-3xl xl:max-w-4xl">
+        <main className="mx-auto grid max-w-xl grid-cols-1 justify-items-center gap-12 px-4 md:max-w-2xl md:gap-28 md:py-32 lg:max-w-3xl xl:max-w-4xl">
           {children}
         </main>
       </Providers>

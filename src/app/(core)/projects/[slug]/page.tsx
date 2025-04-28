@@ -21,7 +21,7 @@ const ProjectPage = async ({
   return (
     <>
       <Link href="/">
-        <BackButton className="-left-40 md:-top-10 md:-left-5 relative top-20 md:fixed" />
+        <BackButton className="-left-40 md:-top-10 md:-left-5 relative top-5 md:fixed" />
       </Link>
       <div className="grid w-full grid-cols-1 gap-6 md:gap-8">
         <div className="flex items-center gap-6">
