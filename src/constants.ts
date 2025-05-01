@@ -54,6 +54,23 @@ export const projects = [
       "/images/projects/innova-website/desktop-blog-detail.png",
       "/images/projects/innova-website/desktop-cms.png"
     ]
+  },
+  {
+    key: "builds-hub",
+    title: "Builds Hub",
+    logo: "/images/projects/builds-hub/logo.png",
+    descriptionParagraphs: [
+      "Central Hub for All GitHub Action Workflows. Discover, manage, and follow automation flows — all in one place.",
+      "Stay organized and in control of your CI/CD processes. Our platform brings together every GitHub Action workflow you care about, making it easier to track, reuse, and optimize automation across your projects."
+    ],
+    link: "/projects/builds-hub",
+    showcaseImage: "/images/projects/builds-hub/desktop-landing.png",
+    images: [
+      "/images/projects/builds-hub/desktop-landing.png",
+      "/images/projects/builds-hub/desktop-dashboard.png",
+      "/images/projects/builds-hub/desktop-workflow.png",
+      "/images/projects/builds-hub/desktop-jobs.png"
+    ]
   }
 ] satisfies Project[];
 
