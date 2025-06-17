@@ -40,6 +40,23 @@ export const projects = [
     ]
   },
   {
+    key: "zoom-app",
+    title: "Zoom App",
+    logo: "/images/projects/zoom-app/logo.png",
+    descriptionParagraphs: [
+      "A zoom app that allows users to change their faces in real-time during video calls, with virtual faces that can be selected and applied."
+    ],
+    link: "/projects/zoom-app",
+    showcaseImage: "/images/projects/zoom-app/desktop-virtual-images.png",
+    images: [
+      "/images/projects/zoom-app/desktop-login.png",
+      "/images/projects/zoom-app/desktop-checking-service.png",
+      "/images/projects/zoom-app/desktop-service-check-done.png",
+      "/images/projects/zoom-app/desktop-virtual-images.png",
+      "/images/projects/zoom-app/desktop-favorite-virtual-images.png"
+    ]
+  },
+  {
     key: "innova-website",
     title: "Innova Website",
     logo: "/images/projects/innova-website/logo.png",
